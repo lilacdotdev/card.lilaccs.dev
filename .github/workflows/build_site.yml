@@ -33,12 +33,7 @@ jobs:
         run: |
           echo Installing node project dependencies
           npm install
-
-      - name: Run Audit
-        run: |
-          echo Checking for audits
-          npm audit fix --force
-
+          
       # Runs a set of commands using the runners shell
       - name: Build Project
         run: |
