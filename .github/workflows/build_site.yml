@@ -37,8 +37,7 @@ jobs:
       - name: Run Audit
         run: |
           echo Checking for audits
-          npm audit fix
-          npm fund
+          npm audit fix --force
 
       # Runs a set of commands using the runners shell
       - name: Build Project
